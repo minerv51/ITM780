@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16pt;
+    background-color: #6983b7;
+    color: #FEF9D9;
+    margin: 20px;
+}
+
+h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 36pt;
+    color: #FEF9D9;
+    font-weight: bolder;
+}
+
+h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 28pt;
+    color: #FEF9D9;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Arial', sans-serif;
+    font-size: 22pt;
+    color: #FEF9D9;
+    font-weight: normal;
+}
+
+p{
+    font-family: 'Arial', sans-serif;
+    font-size: 16pt;
+    color: #FEF9D9;
+    line-height: 1.6;
+}
+
+a:link{
+    color: #FEF9D9;
+    text-decoration: underline;
+}
+
+a:visited{
+    color: #2a4159;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: #FEF9D9;
+    text-decoration: none;
+}
+
+a:active{
+    color: #FEF9D9;
+    text-decoration: none;
+    font-weight: bold;
+}
