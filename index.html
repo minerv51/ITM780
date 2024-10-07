@@ -2,22 +2,42 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>ITM 780 - Lab 2</title>
+    <title>ITM 780 - Labs</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/main.css'>
 </head>
 <body>
-    <h1>Ben Anthony (B.A.) Minervino</h1>
-<br>
-<hr>
-<br>
+    <!-- Dropdown Navigation & Menu -->
+    <div class="dropdown">
+        <button class="dropbtn"><a href="index.html">Home</a></button>
+        <button onclick="dropFunc1()" class="dropbtn">About Me</button>
+        <div id="dropdown-1" class="dropdown-content">
+            <!-- onmouseover highlights when hovered, onmouseout resets the box -->
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="pages/about-me.html">Summary</a>
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="pages/projects.html">Projects</a>
+        </div>
+        <button onclick="dropFunc2()" class="dropbtn">Contact</button>
+        <div id="dropdown-2" class="dropdown-content">
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="#">Get In Touch</a>
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="#">Socials</a>
+        </div>
+    </div>
+
+    <!-- Introduction continaer with my name and photo -->
+    <div class="intro-container">
+        <h1>Ben Anthony (B.A.) Minervino</h1>
+        <img  id='clickableImg' src="assets/images/me.jpg" alt="A photo of an extremely good looking man">
+    </div>
+    <br>
+    <hr>
+    <br>
+    <!-- Table with my previous and current education in it -->
     <h2>My Education</h2>
         <table border="1" cellspacing="0" cellpadding="10">
             <tr>
                 <td>
                     <div>
-                        <a href="http://www.yrdsb.ca/schools/emilycarr.ss/Pages/default.aspx" target="blank">Emily Carr Secondary School Website</a>
+                        <a href="http://www.yrdsb.ca/schools/emilycarr.ss/Pages/default.aspx" target="blank" class="school-link">Emily Carr Secondary School Website</a>
                     </div>
                 </td>
                 <td>
@@ -29,7 +49,7 @@
             <tr>
                 <td>
                     <div>
-                        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/#!tab-1694454039456-courses" target="blank">TMU's BTM Website</a>
+                        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/#!tab-1694454039456-courses" target="blank" class="school-link">TMU's BTM Website</a>
                     </div>
                 </td>
                 <td>
@@ -39,18 +59,18 @@
                 </td>
             </tr>
         </table>
-<br>
-<hr>
-<br>
+    <br>
+    <hr>
+    <br>
     <h2>My Program</h2>
     <h3>Business Tehnology Management</h3>
     <p>Business Technology Management is a program based on the Business Management program. It takes
         aspects from the original Business Management program and adds Information Technology courses in order to
         prepare students for managerial and data roles such as project managers or data analysts and many other roles in between.
     </p>
-<br>
-<hr>
-<br>
+    <br>
+    <hr>
+    <br>
     <h2>My Courses</h2>
     <ol>
         <li>
@@ -89,20 +109,30 @@
         </li>
     </ol>
     
-<br>
-<hr>
-<br>
+    <br>
+    <hr>
+    <br>
 
     <h2>Educational Awards</h2>
     <h3>Emily Carr Secondary School</h3>
     <p>Honour Roll - 2021</p>
 
-<br>
-<hr>
-<br>
+    <br>
+    <hr>
+    <br>
 
     <h2>Extra Curricular Activites Associated With School</h2>
     <h3>Saint Michael the Archangel Catholic Elementary School</h3>
     <p>Men's Intermediate Ice Hockey Team Player - 2017</p>
+    <br>
+    <hr>
+    <br>
+    <h2>Get In Touch With Me!</h2>
+    <div class="contact-content">
+        <button id="nameButton" onclick="namePrompt()">Enter Your Name Here!</button>
+    </div>
+
+    <script src="assets/script.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,184 @@
+/*Universal CSS*/
+body {
+    font-family: 'Arial', sans-serif;
+    font-size: 16pt;
+    background-color: #6983b7;
+    color: #FEF9D9;
+    margin: 20px;
+}
+
+/*Nav Bar*/
+
+/*CSS for the button that initiates the dropdown menu*/
+.dropbtn {
+    font-size: 20px;
+}
+
+.dropbtn a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Controls CSS for the whole dropdown nav bar*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/*CSS for the content within the dropdown menu*/
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+}
+
+.dropdown-content a:link {
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+/*CSS for showing the initially hidden dropdown menus*/
+.show {
+    display:block;
+}
+
+
+/*index.html*/
+.intro-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-container img{
+    border-radius: 10px;
+    width: 45%;
+    height: auto;
+    box-shadow: 0px 0px 10px 10px rgba(254, 249, 217, 1);
+    margin: 0px 35px;
+}
+
+.intro-container img:hover{
+    cursor: pointer;
+}
+
+/*CSS for how the intro-container img looks when it is enlarged*/
+.enlarged {
+    margin: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 36pt;
+    color: #FEF9D9;
+    font-weight: bolder;
+}
+
+h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 28pt;
+    color: #FEF9D9;
+    font-weight: bold;
+}
+
+h3{
+    font-family: 'Arial', sans-serif;
+    font-size: 22pt;
+    color: #FEF9D9;
+    font-weight: normal;
+}
+
+p{
+    font-family: 'Arial', sans-serif;
+    font-size: 16pt;
+    color: #FEF9D9;
+    line-height: 1.6;
+}
+
+.school-link a:link{
+    color: #FEF9D9;
+    text-decoration: underline;
+}
+
+.school-link a:visited{
+    color: #2a4159;
+    text-decoration: underline;
+}
+
+.school-link a:hover{
+    color: #FEF9D9;
+    text-decoration: none;
+}
+
+.school-link a:active{
+    color: #FEF9D9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 30%;
+}
+
+.contact-content button{
+    padding: 20px 0px;
+    border-radius: 10px;
+    border: 2px #FEF9D9 solid;
+    color: #FEF9D9;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s ease-in-out;
+    font-size: 2rem;
+}
+
+.contact-content button:hover{
+    box-shadow: 0px 0px 10px 8px rgba(254, 249, 217, 1);
+    cursor: pointer;
+}
+
+/*about-me.html*/
+.about-me-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-section img {
+    width: 100%;
+    height: auto;
+}
+
+/*projects.html*/
+.project-portfolio {
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 75%;
+    border: 2px #FEF9D9 solid;
+}
+
+.project-portfolio td {
+    padding: 15px 5px;
+}
+
+.project-portfolio a {
+    color: #FEF9D9;
+    text-decoration:underline;
+    font-weight: bold;
+}
