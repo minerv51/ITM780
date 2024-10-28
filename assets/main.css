@@ -163,6 +163,38 @@ p{
     height: auto;
 }
 
+#contact-info-form {
+    margin: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 25px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    width: 75dvh;
+    padding: 7vh;
+}
+
+.form-header {
+    margin: 1dvh;
+}
+
+.username {
+    margin-bottom: 1.5dvh;
+}
+
+.submit-reset {
+    margin: 4dvh;
+}
+
 /*projects.html*/
 .project-portfolio {
     text-align: center;

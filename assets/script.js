@@ -60,3 +60,13 @@ function highlight(element) {
 function resetItem(element) {
     element.style.backgroundColor = ""
 }
+
+
+//Function to get the form data and relay the password back to the user once the submit button is clicked
+function relayPassword() {
+    //Get the var for the username and password
+    var username = document.getElementById("username")
+    var password = document.getElementById("password").value;
+    //Relay the password back to the user
+    alert(`Your password is ${password}`)
+}
