@@ -1,6 +1,6 @@
 /*Universal CSS*/
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Domine', serif;
     font-size: 16pt;
     background-color: #6983b7;
     color: #FEF9D9;
@@ -163,7 +163,7 @@ p{
     height: auto;
 }
 
-#contact-info-form {
+#account-info-form {
     margin: auto;
     height: auto;
     display: flex;
@@ -213,4 +213,74 @@ form{
     color: #FEF9D9;
     text-decoration:underline;
     font-weight: bold;
+}
+
+/*contact.html*/
+#contact-form {
+    margin: auto;
+    height: auto;
+    width: 90dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px black solid;
+    border-radius: 25px;
+    color: #6983b7;
+    background-color: #f1f1f1;
+}
+
+#contact-form h1, p {
+    color: #6983b7;
+    background-color: #f1f1f1;
+}
+
+.account-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0dvh;
+    margin: 5dvh;
+}
+
+.account-header h1,
+.account-header p {
+    margin: 1dvh;
+}
+
+#contact-form .client-info-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5dvh;
+}
+
+#contact-form .client-info-inputs > * {
+    width: 35dvw;
+    box-sizing: border-box;
+}
+
+#pref-head {
+    margin-bottom: 0dvh;
+}
+
+.radio-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5dvw;
+    margin-bottom: 3dvh;
+}
+
+.radio-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 1dvw;
+}
+
+.consent-button {
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    font-size: x-small;
 }

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+    <meta charset='utf-8'>
+    <title>ITM 780 - Labs</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../assets/main.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap" rel="stylesheet">
+    <script src="../assets/script.js" defer></script>
+    <script src="../assets/form.js" defer></script>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn"><a href="../index.html"highlight(this)" onmouseout="resetItem(this)" index.html">Home</a></button>
+        <button onclick="dropFunc1()" class="dropbtn">About Me</button>
+        <div id="dropdown-1" class="dropdown-content">
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="about-me.html">Summary</a>
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="projects.html">Projects</a>
+        </div>
+        <button onclick="dropFunc2()" class="dropbtn">Contact</button>
+        <div id="dropdown-2" class="dropdown-content">
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="contact.html">Contact</a>
+            <a onmouseover="highlight(this)" onmouseout="resetItem(this)" href="#">Socials</a>
+        </div>
+    </div>
+    
+    <!--Contact form for site viewers-->
+    <form id="contact-form">
+
+        <!--Form header with title and description-->
+        <div class="account-header">
+            <h1>Contact Information Form</h1>
+            <p>Feel Free To Leave Your Information So We Can Get In Touch!</p>
+        </div>
+
+        <!--Information inputs-->
+        <div class="client-info-inputs">
+
+            <!--Name Input-->
+            <label for="name">Name:</label>
+            <input id="name" type="text" value="">
+
+            <!--Email Input-->
+            <label for="email">Email:</label>
+            <input id="email" type="text" value="">
+
+            <!--Phone Number Input-->
+            <label for="phoneNum">Phone Number:</label>
+            <input id="phoneNum" type="number" value="">
+
+            <!--Contact method preferance input-->
+            <p id="pref-head">What Is Your Preferred Method Of Contact?</p>
+            <div class="radio-buttons">
+                <!--Radio button for email decision-->
+                <div class="radio-item">
+                    <input type="radio" id="prefCont1" name="contactMethod" value="Email">
+                    <label for="prefCont1">Email</label>
+                </div>
+                <!--Radio button for text decision-->
+                <div class="radio-item">
+                    <input type="radio" id="prefCont2" name="contactMethod" value="Text">
+                    <label for="prefCont2">Text</label>
+                </div>
+            </div>
+
+            <!--Reason for contact input-->
+            <label for="reason">Reason for Contact</label>
+            <!--Dropdown for each of the decisions-->
+            <select id="reason" name="reason">
+                <option value="inquiry">General Inquiry</option>
+                <option value="job">Job Opportunity</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">other</option>
+            </select>
+
+            <!--Referral Input-->
+            <label for="referral">How Did You Hear About Me?</label>
+            <!--Dropdown for each of the decisions-->
+            <select id="referral" name="referral">
+                <option value="linkedin">LinkedIn</option>
+                <option value="instagram">Instagram</option>
+                <option value="friend/colleague">Friend/Colleague</option>
+                <option value="search">Search Engine</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!--Message Input-->
+            <label for="message">Have A Question? Get In Touch</label>
+            <textarea id="message" name="message" rows="4" placeholder="Write Your Message..."></textarea>
+
+            <!--Consent to collect information button-->
+            <div class="consent-button">
+                <label for="consent">I agree to be contacted for a follow up</label>
+                <input id="consent" name="consent" type="checkbox">
+            </div>
+        </div>
+
+        <!--Submit and reset button div-->
+        <div class="submit-reset">
+            <input type="submit" value="Submit">
+            <input type="reset">
+        </div>
+
+    </form>
+</body>
