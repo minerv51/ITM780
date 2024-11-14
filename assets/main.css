@@ -1,7 +1,7 @@
 /*Universal CSS*/
 body {
     font-family: 'Domine', serif;
-    font-size: 16pt;
+    font-size: 16px;
     background-color: #6983b7;
     color: #FEF9D9;
     margin: 20px;
@@ -195,6 +195,24 @@ form{
     margin: 4dvh;
 }
 
+.fav-song {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-photos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#pic {
+    height: 65dvh;
+    width: auto;
+}
 /*projects.html*/
 .project-portfolio {
     text-align: center;
